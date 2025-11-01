@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/TechLarkie/Assignment-02#readme",
   "dependencies": {
+    "connect": "^3.7.0",
     "nodemon": "^3.1.10"
   }
 }
