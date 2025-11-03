@@ -1,9 +1,37 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET home page. */
+/* GET home (/) page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: 'Home Page' });
 });
+/*Default landing page upon landing onto the site for the first time*/
+
+
+/* GET home page */
+router.get('/home', function(req, res, next) {
+  res.render('index', { title: 'Home Page' });
+});
+/*Dedicated section for the home landing page which is seperate from the above home page*/
+
+
+/* GET About Me Page */
+router.get('/aboutme', function(req, res, next) {
+  res.render('index', { title: 'About Me' });
+});
+
+
+
+/* Get Projects Page */
+router.get('/projects', function(req, res, next) {
+  res.render('index', { title: 'Projects' });
+});
+
+
+/* Contact Me */
+router.get('/contactme', function(req, res, next) {
+  res.render('index', { title: 'Contact Me' });
+});
+
 
 module.exports = router;
