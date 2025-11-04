@@ -10,39 +10,34 @@
   </head>
   <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
+  <!--Code for the implementation of a functional navagation bar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="/"> Zeiad's Website</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
+
+    <ul class="navbar-nav me-auto"> <!--Creates an unordered list in which the navagtion elements will be added-->
+
+      <!--code which implements a clickable tag in the navagation bar - this takes the user directly to the homepage-->
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="/home"> <i class="fa-solid fa-house-chimney-window"></i>Home</a>
       </li>
+      <!--code which implements a clickable tag in the navagation bar - this takes the user directyly to the About me page-->
       <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="/aboutme"> <i class="fa-solid fa-info"></i>About Me</a>
       </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
+      <!--takes the user directly to the projects page-->
       <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
+        <a class="nav-link" href="/projects"> <i class="fa-solid fa-diagram-project"></i>Projects</a>
       </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
+      <!--Takes the user directly to the contacts page-->
+      <li class="nav-item">
+        <a class="nav-link" href="/contactme"> <i class="fa-solid fa-address-book"></i> Contact Me</a>
+      </li>
+
+
   </div>
 </nav>
   <!--All of the above code was taken from the following website as shown in lecture 7 https://getbootstrap.com/docs/4.0/components/navbar/ - This adds a navagtion bar implementation into the website-->
