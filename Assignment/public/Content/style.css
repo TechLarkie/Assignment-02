@@ -1,8 +1,78 @@
 body {
+  background-color: #171320;
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+ 
 }
 
 a {
-  color: #00B7FF;
+  color: red;
+}
+
+
+hr{
+  color:whitesmoke
+}
+label{
+  color: white;
+}
+
+span{
+  text-align: center;
+  text-shadow: 3px 3px 4px;
+}
+
+
+header{
+  text-align: center;
+  color:white;
+  text-shadow: 2px 3px 6px;
+}
+
+.about-img{
+  float:left;
+}
+
+
+h3{
+  color:antiquewhite;
+}
+
+
+
+
+.Project-Square{
+  text-align: center; /*Aligns the text which will be insde the individual pockets*/
+
+}
+
+
+.Individual-Pocket{
+  display: inline-table; /*Aligns the boxs together in an organized manner*/
+  width: 450px;
+  height: 200px;
+  margin: 5rem;
+  padding: 2rem;
+  background: linear-gradient(to bottom, indigo,violet); /*Adds a linear gradient to the interactable squares*/
+  color: whitesmoke;
+  border-radius: 50px; /*This specific attribute changes the borders of the square such that they are much more rounded, which makes them much more appealing to look at*/
+  box-shadow: 1px 5px 7px;
+  transition: background 0.3s, transform 0.3s /*This line of code actually makes the animation smooth, instead of it being robotic or otherwise clunky, it smooths out the animation for when the mouse is hovering over the block*/
+}
+
+.Individual-Pocket:hover{
+  background:indigo; /*this will change the color of the square when a mouse is hovering over it*/
+  transform: translateY(-5px);/*This is actually really cool it lifts up the block when its hovered over*/
+}
+
+
+
+
+
+
+
+label{
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight:bold;
 }

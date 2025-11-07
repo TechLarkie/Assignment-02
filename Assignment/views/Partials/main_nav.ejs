@@ -6,55 +6,48 @@
      </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
         <ul class="navbar-nav ms-auto"> <!--Creates an unordered list in which the navagtion elements will be added-->
 
         <!--code which implements a clickable tag in the navagation bar - this takes the user directly to the homepage-->
-        <li class="nav-item active">
-            <% if (title == "Home Page") { %>
-            <a class="nav-link active" href="/home"> <i class="fa-solid fa-house-chimney-window"></i>Home</a>
-            <% } else { %>
-            <a class="nav-link" href="/home"> <i class="fa-solid fa-house-chimney-window"></i>Home</a>
+            <li class="nav-item active">
+                <% if (title == "Home Page") { %>
+                <a class="nav-link active" href="/home"> <i class="fa-solid fa-house-chimney-window"></i>Home</a>
+                <% } else { %>
+                <a class="nav-link" href="/home"> <i class="fa-solid fa-house-chimney-window"></i>Home</a>
+                <% } %>
+            <!--added code which uses a simple if/else statment - this allows the tag in the navagation bar to either be lit up or not lit up depending on whether or not I am currently on that page-->
+            </li>
+
+            <!--code which implements a clickable tag in the navagation bar - this takes the user directyly to the About me page-->
+            <li class="nav-item">
+                <% if (title == "About Me") { %>
+                <a class="nav-link active" href="/aboutme"> <i class="fa-solid fa-info"></i>About Me</a>
+                <% } else { %>
+                <a class="nav-link" href="/aboutme"> <i class="fa-solid fa-info"></i>About Me</a>
+                <% } %>
+            <!--Implemented code which will either light up or not light up depending on whether or not the user is actively on that specific page of the website-->
+            </li>
+
+            <!--takes the user directly to the projects page-->
+            <li class="nav-item">
+            <% if (title == "Projects") { %>
+                <a class="nav-link active" href="/projects"> <i class="fa-solid fa-diagram-project"></i>Projects</a>
+                <% } else { %>
+                <a class="nav-link" href="/projects"> <i class="fa-solid fa-diagram-project"></i>Projects</a>
             <% } %>
-          <!--added code which uses a simple if/else statment - this allows the tag in the navagation bar to either be lit up or not lit up depending on whether or not I am currently on that page-->
-        </li>
+                <!--implemented code which will light up or keep dim the navagation tag on the website depending on whether or not the user is on that specific page of the website-->  
+            </li>
 
-        <!--code which implements a clickable tag in the navagation bar - this takes the user directyly to the About me page-->
-        <li class="nav-item">
-            <% if (title == "About Me") { %>
-            <a class="nav-link active" href="/aboutme"> <i class="fa-solid fa-info"></i>About Me</a>
-            <% } else { %>
-            <a class="nav-link" href="/aboutme"> <i class="fa-solid fa-info"></i>About Me</a>
-            <% } %>
-          <!--Implemented code which will either light up or not light up depending on whether or not the user is actively on that specific page of the website-->
-        </li>
-
-        <!--takes the user directly to the projects page-->
-        <li class="nav-item">
-           <% if (title == "Projects") { %>
-            <a class="nav-link active" href="/projects"> <i class="fa-solid fa-diagram-project"></i>Projects</a>
-            <% } else { %>
-            <a class="nav-link" href="/projects"> <i class="fa-solid fa-diagram-project"></i>Projects</a>
-           <% } %>
-            <!--implemented code which will light up or keep dim the navagation tag on the website depending on whether or not the user is on that specific page of the website-->  
-        </li>
-
-        <!--Takes the user directly to the contacts page-->
-        <li class="nav-item">
-           <% if (title == "Contact Me") { %>
-           <a class="nav-link active" href="/contactme"> <i class="fa-solid fa-address-book"></i> Contact Me</a>
-            <% } else { %>
-           <a class="nav-link" href="/contactme"> <i class="fa-solid fa-address-book"></i> Contact Me</a>
-            <% } %>
-            <!--Implemented code which will light up or keep dim the navagation tag in the navagation bar depending on whether or not the user is currently viewing that specific page of the website-->
-       </li>
-
-
-      </div>
+            <!--Takes the user directly to the contacts page-->
+            <li class="nav-item">
+            <% if (title == "Contact Me") { %>
+            <a class="nav-link active" href="/contactme"> <i class="fa-solid fa-address-book"></i> Contact Me</a>
+                <% } else { %>
+            <a class="nav-link" href="/contactme"> <i class="fa-solid fa-address-book"></i> Contact Me</a>
+                <% } %>
+                <!--Implemented code which will light up or keep dim the navagation tag in the navagation bar depending on whether or not the user is currently viewing that specific page of the website-->
+            </li>
+        </ul>
+    </div>
     </nav>
     
-    <!--All of the above code was taken from the following website as shown in lecture 7 https://getbootstrap.com/docs/4.0/components/navbar/ - This adds a navagtion bar implementation into the website-->
-
-
-  </body>
-</html>

@@ -17,20 +17,20 @@ router.get('/home', function(req, res, next) {
 
 /* GET About Me Page */
 router.get('/aboutme', function(req, res, next) {
-  res.render('index', { title: 'About Me' });
+  res.render('Aboutme', { title: 'About Me' });
 });
 
 
 
 /* Get Projects Page */
 router.get('/projects', function(req, res, next) {
-  res.render('index', { title: 'Projects' });
+  res.render('Projects', { title: 'Projects' });
 });
 
 
 /* Contact Me */
 router.get('/contactme', function(req, res, next) {
-  res.render('index', { title: 'Contact Me' });
+  res.render('Contactme', { title: 'Contact Me' });
 });
 
 
