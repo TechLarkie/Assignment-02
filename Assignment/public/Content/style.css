@@ -1,40 +1,48 @@
 body {
-  background-color: #171320;
+  /*Font, background color and padding for the websites background*/
+  background-color: #171320; 
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
  
 }
 
-a {
+a { 
   color: red;
 }
 
 
-hr{
+hr{ 
+  /*Color used for Horizontal lines*/
   color:whitesmoke
 }
+
 label{
+  /*color used for labels*/
   color: white;
 }
 
 span{
+  /*text alignment and the creation of shadows behind certain texts which I wanted to have shadows behind as an added effect*/
   text-align: center;
   text-shadow: 3px 3px 4px;
 }
 
 
 header{
+  /*text alignment for headers along with color and shadow customization*/
   text-align: center;
   color:white;
   text-shadow: 2px 3px 6px;
 }
 
 .about-img{
+  /*floats text next to an image rather than underneath it*/
   float:left;
 }
 
 
 h3{
+  /*heading color*/
   color:antiquewhite;
 }
 
@@ -72,6 +80,7 @@ h3{
 
 
 label{
+  /*further label customization for margins and bolding so that it is clearer*/
   display: block;
   margin-bottom: 0.3rem;
   font-weight:bold;

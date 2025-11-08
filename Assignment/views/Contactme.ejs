@@ -4,35 +4,39 @@
 
 
 <h1><span class="badge badge-secondary">Contact Me</span></h1>
+<!--code which just creates the primary header for the "Contact Me" Page-->
 
 
 <form class="needs-validation" novalidate>
+  <!--Extensive use of bootstrap for the contact me page-->
 
-  <div class="form-row">
 
-    <div class="col-md-4 mb-3">
+  <div class="form-row"> <!--everything within this div element falls under the overall class of 'form-row'-->
+
+    <div class="col-md-4 mb-3"> <!--implementation for the 'First Name' Field-->
       <label for="validationCustom01">First name</label>
-      <input type="text" class="form-control" id="validationCustom01" placeholder="First name"  required>
-      <div class="valid-feedback">
-        Looks good!
+      <input type="text" class="form-control" id="validationCustom01" placeholder="First name"  required> <!--making it so that the field is required to be filled should the user actually decide that they do want to contact me-->
+    
+      <div class="valid-feedback"> <!--feedback which indicates that the user has infact inputted something into the required fields-->
+        Thank you!
       </div>
     </div>
   
     
 
-    <div class="col-md-4 mb-3">
+    <div class="col-md-4 mb-3"> <!--implementation for the 'Last Name' Field-->
       <label for="validationCustom02">Last name</label>
-      <input type="text" class="form-control" id="validationCustom02" placeholder="Last name"  required>
-      <div class="valid-feedback">
-        Looks good!
+      <input type="text" class="form-control" id="validationCustom02" placeholder="Last name"  required> <!--shoudl the user actually want to send me something they must include their last name otherwise the last name box will through up an error saying that the box must be correctly filled-->
+      <div class="valid-feedback"> <!--feedback for the user which indicates that they have filled the boxes with some kind of responce-->
+        Thank you! 
       </div>
 
 
-    <div class="col-md-4 mb-3">
+    <div class="col-md-4 mb-3"> <!--implementation of the 'Email' Field-->
       <label for="validationCustom02">Email</label>
-      <input type="text" class="form-control" id="validationCustom02" placeholder="Email"  required>
-      <div class="valid-feedback">
-      Looks good!
+      <input type="text" class="form-control" id="validationCustom02" placeholder="Email"  required> <!--An email is required of any user which would like to send me a message by way of the contact me page and this ensures that they cannot submit the request without first having filled this-->
+      <div class="valid-feedback"> <!--gives the user feedback for correctly filling out the required field-->
+      Thank you!
       </div>
     </div>
  
@@ -40,7 +44,8 @@
 
 
 
-  <div class="form-group">
+
+  <div class="form-group"> <!--code which is responsible for the check box agreeing to the terms and conditions-->
     <div class="form-check">
       <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
       <label class="form-check-label" for="invalidCheck">
@@ -48,14 +53,14 @@
       </label>
 
       <div class="invalid-feedback">
-        You must agree before submitting.
+        You must agree before submitting. <!--ensures that the user which is submitting the message agrees to the terms before they can submit-->
       </div>
 
     </div>
 
   </div>
 
-  <button class="btn btn-primary" type="submit">Submit form</button>
+  <button class="btn btn-primary" type="submit">Send !</button> <!--Submission button being created-->
 
 </form>
 
